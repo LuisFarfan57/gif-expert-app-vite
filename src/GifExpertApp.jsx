@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { AddValue, GifGrid } from './components'
 
 const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['One Punch'])
+  const [categories, setCategories] = useState([])
 
   const addCategory = (category) => {
     if (categories.map(category => category.toLowerCase()).includes(category.toLowerCase())) return

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 export const AddValue = ({ onNewValue, placeholder }) => {
@@ -25,4 +26,9 @@ export const AddValue = ({ onNewValue, placeholder }) => {
       onKeyUp={handleKeyPress}
     />
   )
+}
+
+AddValue.propTypes = {
+  onNewValue: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired
 }
